@@ -14,9 +14,9 @@
     <img src="https://img.shields.io/github/languages/code-size/Opalee69/Celestial" alt="GitHub code size in bytes"/>
 </div
 
-##Info
 
-- Join our [Discord](https://discord.gg/dN96PJY93G) for help
+# Important
+- Join our [Discord](https://discord.gg/dN96PJY93G)
 
 
        
