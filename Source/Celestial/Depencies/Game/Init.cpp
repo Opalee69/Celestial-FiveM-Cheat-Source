@@ -7,7 +7,7 @@ void Init::Initialize() {
     if ((GetModuleHandleA)("FiveM_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b2545_GameProcess.exe")) {
         g_worldptr = 0x247F840;
         g_replayifcptr = 0x1EFD4C8;
-        g_boneptr = 0x0; //needed
+        g_boneptr = 0x430;
         g_amor = 0x14B0;
     }
     if ((GetModuleHandleA)("FiveM_b1609_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b1609_GameProcess.exe")) {
@@ -43,42 +43,42 @@ void Init::Initialize() {
         g_worldptr = 0x257BEA0;
         g_replayifcptr = 0x1F42068;
         g_viewportptr = 0x1feaac0;
-        g_boneptr = 0x0; //needed
+        g_boneptr = 0x410;
         g_amor = 0x150C;
     }
     if ((GetModuleHandleA)("FiveM_b3095_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b3095_GameProcess.exe")) {
         g_worldptr = 0x2593320;
         g_replayifcptr = 0x1F58B58;
         g_viewportptr = 0x20019E0;
-        g_boneptr = 0x0; //needed
-        g_amor = 0x0; //needed
+        g_boneptr = 0x410;
+        g_amor = 0x150C; //needed
     }
     if ((GetModuleHandleA)("FiveM_b2802_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b2802_GameProcess.exe")) {
         g_worldptr = 0x2593320;
         g_replayifcptr = 0x254D448;
         g_viewportptr = 0x1FBC100;
-        g_boneptr = 0x794784;
+        g_boneptr = 0x410;
         g_amor = 0x150C;
     }
     if ((GetModuleHandleA)("FiveM_b2060_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b2060_GameProcess.exe")) {
         g_worldptr = 0x24C8858;
         g_replayifcptr = 0x1EC3828;
         g_viewportptr = 0x1F6A7E0;
-        g_boneptr = 0x7935D0;
+        g_boneptr = 0x430;
         g_amor = 0x14E0;
     }
     if ((GetModuleHandleA)("FiveM_b2612_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b2060_GameProcess.exe")) {
         g_worldptr = 0x2567DB0;
         g_replayifcptr = 0x1F77EF0;
         g_viewportptr = 0x1FD8570;
-        g_boneptr = 0x78C758;
+        g_boneptr = 0x430;
         g_amor = 0x1530;
     }
     if ((GetModuleHandleA)("FiveM_b2372_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b2372_GameProcess.exe")) {
         g_worldptr = 0x252DCD8;
         g_replayifcptr = 0x1F05208;
         g_viewportptr = 0x1F9E9F0;
-        g_boneptr = 0x787FE4;
+        g_boneptr = 0x430;
         g_amor = 0x14E0;
     }
 
