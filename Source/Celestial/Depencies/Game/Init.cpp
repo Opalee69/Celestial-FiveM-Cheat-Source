@@ -77,7 +77,7 @@ void Init::Initialize() {
     if ((GetModuleHandleA)("FiveM_b2372_GTAProcess.exe") || (GetModuleHandleA)("FiveM_b2372_GameProcess.exe")) {
         g_worldptr = 0x252DCD8;
         g_replayifcptr = 0x1F05208;
-        g_viewportptr = 0x1F9F5C8;
+        g_viewportptr = 0x1F9E9F0;
         g_boneptr = 0x787FE4;
         g_amor = 0x14E0;
     }
