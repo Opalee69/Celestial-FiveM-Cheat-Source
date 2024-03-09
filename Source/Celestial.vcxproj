@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3b07d863-b4f3-4a29-8dd4-ae85fc9ee30e}</ProjectGuid>
+    <RootNamespace>femboywarev2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Celestial</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)Celestial\Hook;$(ProjectDir)Celestial\Hook\minhook\include;$(ProjectDir)Celestial\depencies\ImTricks\thirdparty\include;$(ProjectDir)Celestial\depencies\ImTricks;$(ProjectDir)Celestial\Depencies\Game\Helper;$(ProjectDir)Celestial\Features;$(ProjectDir)Celestial\Depencies\Game\Math;$(ProjectDir)Celestial\Depencies\Encryption;$(ProjectDir)Celestial\Depencies;$(ProjectDir)Celestial\Depencies\Game;$(DXSDK_DIR)include;$(ProjectDir)Celestial\Features\Aimbot;$(ProjectDir)Celestial\Features\Visuals;$(ProjectDir)Celestial\Depencies\Memory;$(ProjectDir)Celestial\Depencies\Includes;$(ProjectDir)Celestial\Depencies\ImGui;$(ProjectDir)Celestial\Depencies\Game\Offsets;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Celestial\depencies\ImTricks\thirdparty\lib;$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)Celestial\Hook;$(ProjectDir)Celestial\Hook\minhook\include;$(ProjectDir)Celestial\depencies\ImTricks\thirdparty\include;$(ProjectDir)Celestial\depencies\ImTricks;$(ProjectDir)Celestial\Depencies\Game\Helper;$(ProjectDir)Celestial\Features;$(ProjectDir)Celestial\Depencies\Game\Math;$(ProjectDir)Celestial\Depencies\Encryption;$(ProjectDir)Celestial\Depencies;$(ProjectDir)Celestial\Depencies\Game;$(DXSDK_DIR)include;$(ProjectDir)Celestial\Features\Aimbot;$(ProjectDir)Celestial\Features\Visuals;$(ProjectDir)Celestial\Depencies\Memory;$(ProjectDir)Celestial\Depencies\Includes;$(ProjectDir)Celestial\Depencies\ImGui;$(ProjectDir)Celestial\Depencies\Game\Offsets;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Celestial\depencies\ImTricks\thirdparty\lib;$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Celestial\Depencies\Game\Helper\Helper.cpp" />
+    <ClCompile Include="Celestial\Depencies\Game\Init.cpp" />
+    <ClCompile Include="Celestial\Depencies\Game\Math\World.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImGui\imgui.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImGui\imgui_freetype.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImTricks\colorpicker.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImTricks\gui.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImTricks\imgui_tricks.cpp" />
+    <ClCompile Include="Celestial\Depencies\ImTricks\thirdparty\include\glypther.h" />
+    <ClCompile Include="Celestial\Depencies\Memory\Memory.cpp" />
+    <ClCompile Include="Celestial\Features\Aimbot\Aimhelper.cpp" />
+    <ClCompile Include="Celestial\Features\Visuals\Visuals.cpp" />
+    <ClCompile Include="Celestial\Hook\kiero.cpp" />
+    <ClCompile Include="Celestial\Hook\minhook\src\buffer.c" />
+    <ClCompile Include="Celestial\Hook\minhook\src\hde\hde32.c" />
+    <ClCompile Include="Celestial\Hook\minhook\src\hde\hde64.c" />
+    <ClCompile Include="Celestial\Hook\minhook\src\hook.c" />
+    <ClCompile Include="Celestial\Hook\minhook\src\trampoline.c" />
+    <ClCompile Include="Celestial\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Celestial\Depencies\Encryption\Encryption.h" />
+    <ClInclude Include="Celestial\Depencies\Encryption\Xor_.h" />
+    <ClInclude Include="Celestial\Depencies\Game\Helper\Helper.h" />
+    <ClInclude Include="Celestial\Depencies\Game\Init.h" />
+    <ClInclude Include="Celestial\Depencies\Game\Math\Vectors.h" />
+    <ClInclude Include="Celestial\Depencies\Game\Math\World.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imconfig.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imgui.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imgui_freetype.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imgui_internal.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Celestial\Depencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\colorpicker.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\gui.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\imgui_tricks.hpp" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\fontb.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\ftheader.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\ftoption.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\integer-types.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\mac-support.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\config\public-macros.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\freetype.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftadvanc.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftbbox.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftbdf.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftbitmap.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftbzip2.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftcache.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftchapters.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftcid.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftcolor.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftdriver.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\fterrdef.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\fterrors.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftfntfmt.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftgasp.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftglyph.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftgxval.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftgzip.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftimage.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftincrem.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftlist.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftlogging.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftlzw.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftmac.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftmm.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftmodapi.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftmoderr.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftotval.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftoutln.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftparams.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftpfr.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftrender.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftsizes.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftsnames.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftstroke.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftsynth.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftsystem.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\fttrigon.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\fttypes.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\autohint.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\cffotypes.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\cfftypes.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\compiler-macros.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftcalc.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftdebug.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftdrv.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\fthash.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftmemory.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftmmtypes.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftobjs.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftpsprop.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftrfork.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftserv.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftstream.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\fttrace.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\ftvalid.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\psaux.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\pshints.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svcfftl.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svcid.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svfntfmt.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svkern.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svmetric.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svmm.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svotval.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svprop.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\sfnt.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\svginterface.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\t1types.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\tttypes.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\internal\wofftypes.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\otsvg.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\t1tables.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\ttnameid.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\tttables.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\freetype\tttags.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\ft2build.h" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\nlohmann\json.hpp" />
+    <ClInclude Include="Celestial\Depencies\ImTricks\thirdparty\include\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="Celestial\Features\Aimbot\Aimhelper.h" />
+    <ClInclude Include="Celestial\Features\Vars.h" />
+    <ClInclude Include="Celestial\Features\Visuals\Visuals.h" />
+    <ClInclude Include="Celestial\Depencies\Includes.h" />
+    <ClInclude Include="Celestial\Depencies\Includes\Singleton.h" />
+    <ClInclude Include="Celestial\Depencies\Memory\Memory.h" />
+    <ClInclude Include="Celestial\Hook\kiero.h" />
+    <ClInclude Include="Celestial\Hook\minhook\include\MinHook.h" />
+    <ClInclude Include="Celestial\Hook\minhook\src\buffer.h" />
+    <ClInclude Include="Celestial\Hook\minhook\src\hde\hde32.h" />
+    <ClInclude Include="Celestial\Hook\minhook\src\hde\hde64.h" />
+    <ClInclude Include="Celestial\Hook\minhook\src\hde\pstdint.h" />
+    <ClInclude Include="Celestial\Hook\minhook\src\hde\table32.h" />
+    <ClInclude Include="Celestial\Hook\minhook\src\hde\table64.h" />
+    <ClInclude Include="Celestial\Hook\minhook\src\trampoline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Celestial\Depencies\ImTricks\thirdparty\lib\freetype.lib" />
+    <Library Include="Celestial\Depencies\ImTricks\thirdparty\lib\freetype64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Celestial\Hook\minhook\dll_resources\MinHook.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Celestial\Hook\minhook\dll_resources\MinHook.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
