@@ -47,7 +47,7 @@ ImVec2 World::WorldToScreen(Vector3 vPos)
 Vector3 World::GetBone(DWORD64 cPed, int Bone)
 {
 	D3DXMATRIX matrix = *(D3DXMATRIX*)(cPed + 0x60);
-	D3DXVECTOR3 bone = *(D3DXVECTOR3*)(cPed + (0x430 + Bone * 0x10));
+	D3DXVECTOR3 bone = *(D3DXVECTOR3*)(cPed + (Init::Instance().g_boneptr + Bone * 0x10));
 
 	D3DXVECTOR4 transform;
 	D3DXVec3Transform(&transform, &bone, &matrix);
